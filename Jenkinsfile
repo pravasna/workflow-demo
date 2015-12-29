@@ -32,6 +32,7 @@ stage 'quality-and-functional-test'
 
 stage 'approval'
 	input 'Do you approve deployment to production?'
+	echo 'modified'
 
 stage 'production'
 	echo 'mvn cargo:deploy'
