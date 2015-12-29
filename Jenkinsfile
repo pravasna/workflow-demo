@@ -1,7 +1,7 @@
 node('jdk7') {
 
 	stage 'build'
-		env.PATH="${tool 'mvn-3.3.3-x'}/bin:${env.PATH}"
+		env.PATH="${tool 'maven-3.3.9'}/bin:${env.PATH}"
 		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/issc29/workflow-demo']]])
 		sh 'mvn clean package'
 		archive 'target/*.war'
