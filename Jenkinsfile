@@ -1,4 +1,4 @@
-node('jdk7') {
+node('jdk8') {
 
 	stage 'build'
 		env.PATH="${tool 'maven-3.3.9'}/bin:${env.PATH}"
@@ -14,7 +14,7 @@ node('jdk7') {
 stage 'quality-and-functional-test'
 
 	parallel(qualityTest: {
-    	node('jdk7') {
+    	node('jdk8') {
     		echo 'sonar scan'
         	// sh 'mvn sonar:sonar'
     	}
