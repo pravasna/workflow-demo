@@ -1,2 +1,4 @@
 # workflow-demo
 [![Build Status](http://jenkins.beedemo.local/api-team/job/Pipeline-Demos/job/pipeline-newdemo/badge/icon)](http://jenkins.beedemo.local/api-team/job/Pipeline-Demos/job/pipeline-newdemo/)
+
+Changing to 1.1
